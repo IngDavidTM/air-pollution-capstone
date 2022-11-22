@@ -22,6 +22,9 @@ const Country = () => {
         <i className="fa-solid fa-gear" />
       </nav>
       <div>
+        <img alt={info} src={`https://raw.githubusercontent.com/Ginohmk/worldMaps/main/maps/${info}/vector.svg`} />
+        <h3>{result[0].name.common}</h3>
+        <h4>Air Pollution</h4>
         <p>{`CO: ${infoArr.co}`}</p>
         <p>{`NH3: ${infoArr.nh3}`}</p>
         <p>{`NO: ${infoArr.no}`}</p>
