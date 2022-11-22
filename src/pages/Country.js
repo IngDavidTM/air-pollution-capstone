@@ -1,10 +1,16 @@
 import { Link, useParams } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { getInfo } from '../redux/country/country';
 
 const Country = () => {
   const { info } = useParams();
   const countriesArr = useSelector((state) => state.countries);
   const result = countriesArr.filter((country) => country.cca2 === info.toUpperCase());
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getInfo(result[0].latlng));
+  }, [dispatch, result]);
   return (
     <nav>
       <Link to="/">{'< Region'}</Link>
