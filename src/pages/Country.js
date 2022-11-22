@@ -1,8 +1,27 @@
 import { Link, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
+import {
+  Chart as ChartJS,
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+import { Radar } from 'react-chartjs-2';
 import { getInfo } from '../redux/country/country';
 import '../stylesheet/Country.css';
+
+ChartJS.register(
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  Tooltip,
+  Legend,
+);
 
 const Country = () => {
   const {
@@ -14,6 +33,32 @@ const Country = () => {
     const coor = [lat, lon];
     dispatch(getInfo(coor));
   }, [dispatch, lat, lon]);
+  const data = {
+    labels: ['CO', 'NH3', 'NO', 'NO2', 'O3', 'PM2_5', 'PM10', 'SO2'],
+    datasets: [
+      {
+        label: 'COMPONENTS',
+        data: [
+          infoArr.co,
+          infoArr.nh3,
+          infoArr.no,
+          infoArr.no2,
+          infoArr.o3,
+          infoArr.pm2_5,
+          infoArr.pm10,
+          infoArr.so2,
+        ],
+        backgroundColor: '#ffffffd2',
+        borderColor: '#ffffffd2',
+        borderWidth: 1,
+      },
+    ],
+  };
+
+  function ChartRadar() {
+    return <Radar data={data} />;
+  }
+
   return (
     <div className="country">
       <nav className="navCountry">
@@ -38,6 +83,9 @@ const Country = () => {
           <p>{`PM2_5: ${infoArr.pm2_5}`}</p>
           <p>{`PM10: ${infoArr.pm10}`}</p>
           <p>{`SO2: ${infoArr.so2}`}</p>
+        </div>
+        <div className="chart">
+          <ChartRadar />
         </div>
       </div>
     </div>
