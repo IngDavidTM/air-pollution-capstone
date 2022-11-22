@@ -19,7 +19,7 @@ const Region = () => {
           <h3>{country}</h3>
           <img alt={country} src={`https://raw.githubusercontent.com/Ginohmk/worldMaps/main/maps/${country.toLowerCase()}/vector.svg`} />
           {countriesArr.map((country) => (
-            <NavLink key={country.cca2} to={`${country.cca2.toLowerCase()}/${country.latlng[0]}/${country.latlng[0]}`}>
+            <NavLink key={country.cca2} to={`${country.cca2.toLowerCase()}/${country.latlng[0]}/${country.latlng[0]}/${country.name.common}`}>
               <div>
                 <img alt={country.cca2} src={`https://raw.githubusercontent.com/Ginohmk/worldMaps/main/maps/${country.cca2.toLowerCase()}/vector.svg`} />
                 <h3>{country.name.common}</h3>
@@ -30,7 +30,7 @@ const Region = () => {
         </div>
       </nav>
       <Routes>
-        <Route path=":info/:lat/:lon" element={<Country />} />
+        <Route path=":info/:lat/:lon/:name" element={<Country />} />
       </Routes>
     </>
   );

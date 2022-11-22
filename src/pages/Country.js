@@ -4,7 +4,9 @@ import { useEffect } from 'react';
 import { getInfo } from '../redux/country/country';
 
 const Country = () => {
-  const { info, lat, lon } = useParams();
+  const {
+    info, lat, lon, name,
+  } = useParams();
   const infoArr = useSelector((state) => state.info);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -21,7 +23,7 @@ const Country = () => {
       </nav>
       <div>
         <img alt={info} src={`https://raw.githubusercontent.com/Ginohmk/worldMaps/main/maps/${info}/vector.svg`} />
-        <h3>jk</h3>
+        <h3>{name}</h3>
         <h4>Air Pollution</h4>
         <p>{`CO: ${infoArr.co}`}</p>
         <p>{`NH3: ${infoArr.nh3}`}</p>
