@@ -9,7 +9,7 @@ export const getCountries = createAsyncThunk(GET_COUNTRY, async (region) => {
       'Content-type': 'application/json',
     },
   });
-  const result = response.json();
+  const result = await response.json();
   return result;
 });
 

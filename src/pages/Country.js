@@ -5,20 +5,24 @@ import { getInfo } from '../redux/country/country';
 
 const Country = () => {
   const { info } = useParams();
+  const infoArr = useSelector((state) => state.info);
   const countriesArr = useSelector((state) => state.countries);
   const result = countriesArr.filter((country) => country.cca2 === info.toUpperCase());
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getInfo(result[0].latlng));
-  }, [dispatch, result]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
-    <nav>
-      <Link to="/">{'< Region'}</Link>
-      <h2>{result[0].latlng[0]}</h2>
-      <h2>{result[0].latlng[1]}</h2>
-      <i className="fa-solid fa-microphone" />
-      <i className="fa-solid fa-gear" />
-    </nav>
+    <div>
+      <nav>
+        <Link to="/">{'< Region'}</Link>
+        <h2>Country</h2>
+        <i className="fa-solid fa-microphone" />
+        <i className="fa-solid fa-gear" />
+        <p>{infoArr.co}</p>
+      </nav>
+    </div>
   );
 };
 
