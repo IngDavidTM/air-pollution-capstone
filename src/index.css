@@ -2,3 +2,8 @@
   margin: 0;
   padding: 0;
 }
+
+img {
+  width: 200px;
+  filter: brightness(0) invert(50%) sepia(100%) hue-rotate(900deg);
+}
