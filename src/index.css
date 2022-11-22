@@ -7,6 +7,12 @@
 
 body {
   background-color: #5889e5;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 nav {
@@ -27,13 +33,4 @@ h4 {
 img {
   width: 100%;
   filter: brightness(0) invert(20%) sepia(80%) hue-rotate(210deg);
-}
-
-.country {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: #fff;
 }

@@ -9,9 +9,10 @@ const Region = () => {
   const { country } = useParams();
   const countries = useSelector((state) => state.countries);
   const countriesArr = countries.filter((element) => element.region === (country === 'America' ? 'Americas' : country));
+  window.scrollTo(0, 0);
   return (
     <>
-      <div>
+      <div className="region">
         <nav className="navRegion">
           <Link to="/">
             <i className="fa-solid fa-chevron-left" />
