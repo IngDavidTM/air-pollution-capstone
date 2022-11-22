@@ -19,7 +19,7 @@ const Home = () => {
       </nav>
       <div className="regions">
         {regionsArr.map((element) => (
-          <Link key={element.name} to={`/region/${element.name}`}>
+          <Link key={element.name} to={`/${element.name}`}>
             <div>
               <img alt={element.name} src={`https://raw.githubusercontent.com/Ginohmk/worldMaps/main/maps/${element.img}/vector.svg`} />
               <p>{element.name}</p>

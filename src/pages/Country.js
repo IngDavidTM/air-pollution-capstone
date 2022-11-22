@@ -14,9 +14,9 @@ const Country = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
-    <div>
+    <div className="countryS">
       <nav>
-        <Link to="/">{'< Region'}</Link>
+        <Link to=".." relative="path">{'< Region'}</Link>
         <h2>Country</h2>
         <i className="fa-solid fa-microphone" />
         <i className="fa-solid fa-gear" />

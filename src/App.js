@@ -8,8 +8,9 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/region/:country" element={<Region />} />
-        <Route path="/region/country/:info" element={<Country />} />
+        <Route path="/:country" element={<Region />}>
+          <Route path=":info" element={<Country />} />
+        </Route>
       </Routes>
     </div>
   );
