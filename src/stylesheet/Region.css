@@ -48,12 +48,12 @@
 
 .countriesContainer > * {
   color: #f9fffb;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .countries a {
   text-decoration: none;
-  padding: 10px;
+  padding: 0 5px 5px 0;
 }
 
 .countries a:nth-child(4n-3) {
