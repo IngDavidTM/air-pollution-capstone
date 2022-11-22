@@ -10,11 +10,13 @@ const Region = () => {
   const countriesArr = countries.filter((element) => element.region === (country === 'America' ? 'Americas' : country));
   return (
     <>
-      <nav>
-        <Link to="/">{'< Region'}</Link>
-        <h2>countries</h2>
-        <i className="fa-solid fa-microphone" />
-        <i className="fa-solid fa-gear" />
+      <div>
+        <nav>
+          <Link to="/">{'< Region'}</Link>
+          <h2>countries</h2>
+          <i className="fa-solid fa-microphone" />
+          <i className="fa-solid fa-gear" />
+        </nav>
         <div className="countries">
           <h3>{country}</h3>
           <img alt={country} src={`https://raw.githubusercontent.com/Ginohmk/worldMaps/main/maps/${country.toLowerCase()}/vector.svg`} />
@@ -28,7 +30,7 @@ const Region = () => {
             </NavLink>
           ))}
         </div>
-      </nav>
+      </div>
       <Routes>
         <Route path=":info/:lat/:lon/:name" element={<Country />} />
       </Routes>
