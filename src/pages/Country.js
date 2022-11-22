@@ -1,12 +1,12 @@
 import { Link, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 import { getInfo } from '../redux/country/country';
 
-const Country = () => {
+const Country = ({ countriesArr }) => {
   const { info } = useParams();
   const infoArr = useSelector((state) => state.info);
-  const countriesArr = useSelector((state) => state.countries);
   const result = countriesArr.filter((country) => country.cca2 === info.toUpperCase());
   const dispatch = useDispatch();
   const coor = result[0].latlng;
@@ -16,7 +16,7 @@ const Country = () => {
   return (
     <div className="country">
       <nav>
-        <Link to=".." relative="path">{'< Countries'}</Link>
+        <Link to="..">{'< Countries'}</Link>
         <h2>Country</h2>
         <i className="fa-solid fa-microphone" />
         <i className="fa-solid fa-gear" />
@@ -36,6 +36,10 @@ const Country = () => {
       </div>
     </div>
   );
+};
+
+Country.propTypes = {
+  countriesArr: PropTypes.node.isRequired,
 };
 
 export default Country;

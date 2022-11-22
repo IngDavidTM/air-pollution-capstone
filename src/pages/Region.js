@@ -1,9 +1,10 @@
 import {
-  Link, NavLink, Outlet, useParams,
+  Link, NavLink, Route, Routes, useParams,
 } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { getCountries } from '../redux/region/region';
+import Country from './Country';
 
 const Region = () => {
   const { country } = useParams();
@@ -33,7 +34,9 @@ const Region = () => {
           ))}
         </div>
       </nav>
-      <Outlet />
+      <Routes>
+        <Route path=":info" element={<Country countriesArr={countriesArr} />} />
+      </Routes>
     </>
   );
 };
