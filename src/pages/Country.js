@@ -16,12 +16,21 @@ const Country = () => {
   return (
     <div className="country">
       <nav>
-        <Link to=".." relative="path">{'< Region'}</Link>
+        <Link to=".." relative="path">{'< Countries'}</Link>
         <h2>Country</h2>
         <i className="fa-solid fa-microphone" />
         <i className="fa-solid fa-gear" />
-        <p>{infoArr.co}</p>
       </nav>
+      <div>
+        <p>{`CO: ${infoArr.co}`}</p>
+        <p>{`NH3: ${infoArr.nh3}`}</p>
+        <p>{`NO: ${infoArr.no}`}</p>
+        <p>{`NO2: ${infoArr.no2}`}</p>
+        <p>{`O3: ${infoArr.o3}`}</p>
+        <p>{`PM2_5: ${infoArr.pm2_5}`}</p>
+        <p>{`PM10: ${infoArr.pm10}`}</p>
+        <p>{`SO2: ${infoArr.so2}`}</p>
+      </div>
     </div>
   );
 };
