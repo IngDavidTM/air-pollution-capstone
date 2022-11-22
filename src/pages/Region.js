@@ -20,11 +20,13 @@ const Region = () => {
         <h3>{country}</h3>
         <img alt={country} src={`https://raw.githubusercontent.com/Ginohmk/worldMaps/main/maps/${country.toLowerCase()}/vector.svg`} />
         {countriesArr.map((country) => (
-          <div key={country.cca2}>
-            <img alt={country.cca2} src={`https://raw.githubusercontent.com/Ginohmk/worldMaps/main/maps/${country.cca2.toLowerCase()}/vector.svg`} />
-            <h3>{country.name.common}</h3>
-            <p>{country.population}</p>
-          </div>
+          <Link key={country.cca2} to={`/region/country/${country.cca2.toLowerCase()}`}>
+            <div>
+              <img alt={country.cca2} src={`https://raw.githubusercontent.com/Ginohmk/worldMaps/main/maps/${country.cca2.toLowerCase()}/vector.svg`} />
+              <h3>{country.name.common}</h3>
+              <p>{country.population}</p>
+            </div>
+          </Link>
         ))}
       </div>
     </nav>
