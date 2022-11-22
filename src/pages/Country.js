@@ -9,10 +9,10 @@ const Country = () => {
   const countriesArr = useSelector((state) => state.countries);
   const result = countriesArr.filter((country) => country.cca2 === info.toUpperCase());
   const dispatch = useDispatch();
+  const coor = result[0].latlng;
   useEffect(() => {
-    dispatch(getInfo(result[0].latlng));
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    dispatch(getInfo(coor));
+  }, [dispatch, coor]);
   return (
     <div className="country">
       <nav>
