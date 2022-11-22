@@ -1,23 +1,23 @@
 const regions = [
   {
     name: 'Europe',
-    img: 'https://svgsilh.com/svg/151641.svg',
+    img: 'europe',
   },
   {
     name: 'Oceania',
-    img: 'https://svgsilh.com/svg/151644.svg',
+    img: 'oceania',
   },
   {
     name: 'Africa',
-    img: 'https://svgsilh.com/svg/28615.svg',
+    img: 'africa',
   },
   {
     name: 'Asia',
-    img: 'https://svgsilh.com/svg/151642.svg',
+    img: 'asia',
   },
   {
-    name: 'Americas',
-    img: 'https://svgsilh.com/svg/714733.svg',
+    name: 'America',
+    img: 'america',
   },
 ];
 
