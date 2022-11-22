@@ -1,5 +1,4 @@
 import { Routes, Route } from 'react-router-dom';
-import Country from './pages/Country';
 import Home from './pages/Home';
 import Region from './pages/Region';
 
@@ -8,8 +7,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/region/:country" element={<Region />} />
-        <Route path="/region/country/:info" element={<Country />} />
+        <Route path="/:country/*" element={<Region />} />
       </Routes>
     </div>
   );
