@@ -74,3 +74,33 @@
 .countries a:nth-child(4n-1) {
   background-color: #4063a5;
 }
+
+@media only screen and (min-width: 768px) {
+  .countries header img {
+    max-width: 300px;
+  }
+
+  .countries header h3 {
+    font-size: 80px;
+  }
+
+  .countries header {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .countriesContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: right;
+  }
+
+  .countries a:nth-child(even) {
+    background-color: #4063a5;
+  }
+
+  .countries a:nth-child(odd) {
+    background-color: #4167b0;
+  }
+}

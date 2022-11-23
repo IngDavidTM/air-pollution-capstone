@@ -32,3 +32,26 @@
   top: -50px;
   color: #f9fffb;
 }
+
+@media only screen and (min-width: 768px) {
+  .regions {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+    align-items: initial;
+  }
+
+  .regions a:nth-child(5) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  .regions a:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .regions a:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
