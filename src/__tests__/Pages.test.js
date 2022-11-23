@@ -53,4 +53,24 @@ describe('test testing-library', () => {
     );
     expect(screen.getByText('AFRICA')).toBeInTheDocument();
   });
+  it('should have AMERICA', () => {
+    render(
+      <Provider store={store}>
+        <BrowserRouter>
+          <Home />
+        </BrowserRouter>
+      </Provider>,
+    );
+    expect(screen.getByText('AMERICA')).toBeInTheDocument();
+  });
+  it('should have EUROPE', () => {
+    render(
+      <Provider store={store}>
+        <BrowserRouter>
+          <Home />
+        </BrowserRouter>
+      </Provider>,
+    );
+    expect(screen.getByText('EUROPE')).toBeInTheDocument();
+  });
 });
