@@ -2,7 +2,7 @@
 
 # Space Traveler's Hub
 
-> We built a webpage with React & Redux where you can reserve a rocket or join a mission using SpaceX API.
+> I built a mobile webpage with React & Redux where you can see the pollution information in each country. It was made using the Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
 
 ### Live GitHub Page
 [Live](https://stupendous-tarsier-fe9166.netlify.app/)
