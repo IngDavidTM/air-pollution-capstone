@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Space Traveler's Hub
 
-## Available Scripts
+> We built a webpage with React & Redux where you can reserve a rocket or join a mission using SpaceX API.
 
-In the project directory, you can run:
+### Live GitHub Page
+[Live](https://space-travelers-lobby.netlify.app)
 
-### `npm start`
+## Project view:
+> Home page view
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![1](https://user-images.githubusercontent.com/105117832/203475084-ae865d78-05a3-4948-ab27-cf2553d5f5f9.jpg)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+> Region page view
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image1](https://user-images.githubusercontent.com/105117832/203475223-5ad098c0-fe47-4b81-8ba9-340490e06f7b.jpeg)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> Country page view
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image2](https://user-images.githubusercontent.com/105117832/203475325-928e955e-37be-4959-8230-b9e69ee1a7d7.jpeg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Built With
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- HTML
+- CSS
+- JavaScript
+- React
+- React router DOM
+- Redux
+- Webpack
+- Jest
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### To get a local copy and running the page follow these simple example steps:
+- Click the Code button in the top right corner
+- Download ZIP
+- Unzip the file: air-pollution-capstone.zip
+- Open index.html with your web browser
+### To clone and run the project locally
+- Copy and run it on your terminal
+```
+$git clone git@github.com:IngDavidTM/air-pollution-capstone.git
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Tests
+- `Webhint`
+- `Stylelint`
+- `ESlint`
+- `Lighthouse`
+- `Jest`
 
-## Learn More
+## Authors
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👤 **David Tamayo**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- GitHub: [@IngDavidTM](https://github.com/IngDavidTM)
+- Twitter: [@David5TM](https://twitter.com/David5TM)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ing-david-tamayo)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🤝 Contributing
 
-### Analyzing the Bundle Size
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Feel free to check the [issues page](../../issues/).
 
-### Making a Progressive Web App
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Give a ⭐️ if you like this project!
 
-### Advanced Configuration
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Hat tip to anyone whose code was used
+- Microverse
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
 
-### Deployment
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./LICENSE) licensed.
