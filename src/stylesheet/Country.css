@@ -1,5 +1,6 @@
 .country {
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -11,7 +12,7 @@
 .navCountry {
   justify-content: space-between;
   position: sticky;
-  z-index: 6;
+  z-index: 1;
   top: 0%;
 }
 
