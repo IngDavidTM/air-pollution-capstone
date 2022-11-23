@@ -1,5 +1,8 @@
 .navRegion {
   justify-content: space-between;
+  position: sticky;
+  z-index: 1;
+  top: 0%;
 }
 
 .navRegion h2 {
