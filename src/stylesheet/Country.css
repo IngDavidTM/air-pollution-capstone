@@ -1,0 +1,67 @@
+.country {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  overflow: scroll;
+}
+
+.navCountry {
+  justify-content: space-between;
+}
+
+.navCountry h2 {
+  width: 50%;
+  text-align: center;
+}
+
+.navCountry a {
+  color: #f9fffb;
+  text-decoration: none;
+}
+
+.infoCountry {
+  background-color: #5889e5;
+  height: 100vh;
+}
+
+.infoCountry img {
+  filter: invert(90%);
+}
+
+.infoCountry h3 {
+  background-color: #35548b;
+  padding: 2px;
+  text-align: center;
+  color: #f9fffb;
+}
+
+.infoPollution {
+  background-color: #1d1d1d;
+  color: #f9fffb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+}
+
+.infoPollution h4 {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.chart {
+  background-color: #f9fffb;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  justify-content: center;
+}
+
+.chart > * {
+  text-align: center;
+  margin-bottom: 100px;
+}
