@@ -22,7 +22,8 @@ const Country = () => {
   useEffect(() => {
     const coor = [lat, lon];
     dispatch(getInfo(coor));
-  }, [dispatch, lat, lon]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const data = {
     labels: ['CO', 'NH3', 'NO', 'NO2', 'O3', 'PM2_5', 'PM10', 'SO2'],
     datasets: [
