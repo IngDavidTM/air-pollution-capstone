@@ -81,6 +81,8 @@ const Country = () => {
       <div className="infoCountry">
         <img alt={info} src={`https://raw.githubusercontent.com/Ginohmk/worldMaps/main/maps/${info}/vector.svg`} />
         <h3>{name}</h3>
+        <p>{lat}</p>
+        <p>{lon}</p>
         <div className="infoPollution">
           <h4>Air Pollution</h4>
           <p>{`CO: ${infoArr.co}`}</p>
