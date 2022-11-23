@@ -14,7 +14,6 @@ const initialState = {
 };
 
 export const getInfo = createAsyncThunk(GET_INFO, async (coor) => {
-  console.log(coor);
   const response = await fetch(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${coor[0]}&lon=${coor[1]}&appid=9e828e2624199c7cbb9d9cde2d3b483c`);
   const result = await response.json();
   return result;
