@@ -54,12 +54,14 @@
 }
 
 .chart {
-  background-color: #464646;
+  background-color: #f9fffb;
   display: flex;
+  flex-direction: column;
   padding: 50px 0;
   justify-content: center;
 }
 
 .chart > * {
+  text-align: center;
   margin-bottom: 100px;
 }
