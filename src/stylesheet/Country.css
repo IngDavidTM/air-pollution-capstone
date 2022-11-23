@@ -10,6 +10,9 @@
 
 .navCountry {
   justify-content: space-between;
+  position: sticky;
+  z-index: 6;
+  top: 0%;
 }
 
 .navCountry h2 {
