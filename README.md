@@ -1,60 +1,131 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+<a name="readme-top"></a>
 
-# Space Traveler's Hub
+<div align="center">
+
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
+
+</div>
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Run tests](#run-tests)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
+
+# 📖 Space Traveler's Hub <a name="about-project"></a>
 
 > I built a mobile webpage with React & Redux where you can see the pollution information in each country. It was made using the Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
 
-### Live GitHub Page
-[Live](https://stupendous-tarsier-fe9166.netlify.app/)
 
-## Project view:
-> Home page view
+## 🛠 Built With <a name="built-with"></a>
 
-![1](https://user-images.githubusercontent.com/105117832/203475084-ae865d78-05a3-4948-ab27-cf2553d5f5f9.jpg)
+### Tech Stack <a name="tech-stack"></a>
+
+> The site was built with React and ReduxToolkit for state management 
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>State Management </summary>
+  <ul>
+    <li><a href="https://redux-toolkit.org/">Redux-toolkit</a></li>
+  </ul>
+</details>
 
 
-> Region page view
 
-![image1](https://user-images.githubusercontent.com/105117832/203475223-5ad098c0-fe47-4b81-8ba9-340490e06f7b.jpeg)
-
-
-> Country page view
-
-![image2](https://user-images.githubusercontent.com/105117832/203475325-928e955e-37be-4959-8230-b9e69ee1a7d7.jpeg)
+### Key Features <a name="key-features"></a>
 
 
-## Built With
+- **The home page displays all the regions available**
+- **On click on any region the countries popups**
+- **On click on any country the details popups**
 
-- HTML
-- CSS
-- JavaScript
-- React
-- React router DOM
-- Redux
-- Webpack
-- Jest
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Getting Started
 
-### To get a local copy and running the page follow these simple example steps:
-- Click the Code button in the top right corner
-- Download ZIP
-- Unzip the file: air-pollution-capstone.zip
-- Open index.html with your web browser
-### To clone and run the project locally
-- Copy and run it on your terminal
+## 🚀 Live Demo <a name="live-demo"></a>
+
+
+- [Live App Link](https://stupendous-tarsier-fe9166.netlify.app/)
+- [Loom video link](https://www.loom.com/share/16945521026d41d99b830c98000791f0)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
 ```
-$git clone git@github.com:IngDavidTM/air-pollution-capstone.git
+npm install 
+
+```
+### Setup
+
+Clone this repository to your desired folder:
+
+```
+  cd my-folder
+  git clone git@github.com:IngDavidTM/air-pollution-capstone.git
 ```
 
-### Tests
-- `Webhint`
-- `Stylelint`
-- `ESlint`
-- `Lighthouse`
-- `Jest`
+### Install
 
-## Authors
+Install this project with:
+
+
+```
+cd air-pollution-capstone
+npm install
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+```
+npm start
+```
+
+### Run tests
+
+To run tests, run the following command:
+
+
+```
+npm test
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 👥 Authors <a name="authors"></a>
+
 
 👤 **David Tamayo**
 
@@ -63,22 +134,60 @@ $git clone git@github.com:IngDavidTM/air-pollution-capstone.git
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ing-david-tamayo)
 
 
-## 🤝 Contributing
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+
+- [ ] **Regions on the home page**
+- [ ] **Country Population**
+- [ ] **Country Air Data**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Give a ⭐️ if you like this project!
+<!-- SUPPORT -->
 
-## Acknowledgments
+## ⭐️ Show your support <a name="support"></a>
 
-- Hat tip to anyone whose code was used
-- Microverse
-- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+If you like this project, kindly give a start to support a greater and widespread reach
 
-## 📝 License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) for original design idea.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## ❓ FAQ <a name="faq"></a>
+
+
+- **Do i need node installed?**
+
+  - Yes you do
+
+- **Do i need internet Access**
+
+  - Because the API is from a Live source, yes you do.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
