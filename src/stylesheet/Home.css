@@ -1,0 +1,57 @@
+.navHome {
+  justify-content: space-between;
+}
+
+.navHome h2 {
+  width: 80%;
+}
+
+.regions {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+}
+
+.regions a:nth-child(even) {
+  position: static;
+  background-color: #4063a5;
+  text-decoration: none;
+}
+
+.regions a:nth-child(odd) {
+  position: relative;
+  background-color: #4167b0;
+  text-decoration: none;
+}
+
+.regions p {
+  position: relative;
+  font-size: 30px;
+  width: 50%;
+  left: 60px;
+  top: -50px;
+  color: #f9fffb;
+}
+
+@media only screen and (min-width: 768px) {
+  .regions {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+    align-items: initial;
+  }
+
+  .regions a:nth-child(5) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  .regions a:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .regions a:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+body {
+  background-color: #5889e5;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  background-color: #35548b;
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  color: #f9fffb;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+img {
+  width: 100%;
+  filter: brightness(0) invert(20%) sepia(80%) hue-rotate(210deg);
+}
