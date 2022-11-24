@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
       <nav className="navHome">
-        <h2>Region</h2>
+        <h2>Continent</h2>
         <i className="fa-solid fa-microphone" />
         <i className="fa-solid fa-gear" />
       </nav>
