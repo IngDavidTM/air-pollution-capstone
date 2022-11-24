@@ -27,7 +27,7 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 Space Traveler's Hub <a name="about-project"></a>
+# 📖 Air Pollution <a name="about-project"></a>
 
 > I built a mobile webpage with React & Redux where you can see the pollution information in each country. It was made using the Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
 
